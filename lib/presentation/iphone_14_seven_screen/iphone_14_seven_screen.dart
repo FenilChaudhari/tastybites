@@ -162,7 +162,7 @@ class Iphone14SevenScreen extends GetWidget<Iphone14SevenController> {
                                     textAlign: TextAlign.left)),
                             SizedBox(height: 21.v)
                           ])),
-                  _buildREORDER()
+                  _buildReorder()
                 ]))));
   }
 
@@ -180,7 +180,7 @@ class Iphone14SevenScreen extends GetWidget<Iphone14SevenController> {
   }
 
   /// Section Widget
-  Widget _buildREORDER() {
+  Widget _buildReorder() {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.end,

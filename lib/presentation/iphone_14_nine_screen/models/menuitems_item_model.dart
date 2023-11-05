@@ -1,8 +1,8 @@
 import '../../../core/app_export.dart';
 
-/// This class is used in the [menuitem1_item_widget] screen.
-class Menuitem1ItemModel {
-  Menuitem1ItemModel({
+/// This class is used in the [menuitems_item_widget] screen.
+class MenuitemsItemModel {
+  MenuitemsItemModel({
     this.itemName,
     this.itemPrice,
     this.menuNumber,

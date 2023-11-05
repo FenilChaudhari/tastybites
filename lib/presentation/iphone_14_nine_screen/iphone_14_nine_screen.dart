@@ -1,6 +1,6 @@
-import '../iphone_14_nine_screen/widgets/menuitem1_item_widget.dart';
+import '../iphone_14_nine_screen/widgets/menuitems_item_widget.dart';
 import 'controller/iphone_14_nine_controller.dart';
-import 'models/menuitem1_item_model.dart';
+import 'models/menuitems_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:tastybites/core/app_export.dart';
 import 'package:tastybites/widgets/app_bar/appbar_leading_image.dart';
@@ -24,11 +24,11 @@ class Iphone14NineScreen extends GetWidget<Iphone14NineController> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 24.v),
-                      _buildMenuItem(),
+                      _buildMenuItems(),
                       Spacer(),
                       _buildSubtotal()
                     ])),
-            bottomNavigationBar: _buildProccedToPayment()));
+            bottomNavigationBar: _buildProceedToPayment()));
   }
 
   /// Section Widget
@@ -76,7 +76,7 @@ class Iphone14NineScreen extends GetWidget<Iphone14NineController> {
   }
 
   /// Section Widget
-  Widget _buildMenuItem() {
+  Widget _buildMenuItems() {
     return Padding(
         padding: EdgeInsets.only(left: 7.h, right: 22.h),
         child: Obx(() => ListView.separated(
@@ -86,11 +86,11 @@ class Iphone14NineScreen extends GetWidget<Iphone14NineController> {
               return SizedBox(height: 25.v);
             },
             itemCount: controller
-                .iphone14NineModelObj.value.menuitem1ItemList.value.length,
+                .iphone14NineModelObj.value.menuitemsItemList.value.length,
             itemBuilder: (context, index) {
-              Menuitem1ItemModel model = controller
-                  .iphone14NineModelObj.value.menuitem1ItemList.value[index];
-              return Menuitem1ItemWidget(model);
+              MenuitemsItemModel model = controller
+                  .iphone14NineModelObj.value.menuitemsItemList.value[index];
+              return MenuitemsItemWidget(model);
             })));
   }
 
@@ -181,12 +181,12 @@ class Iphone14NineScreen extends GetWidget<Iphone14NineController> {
   }
 
   /// Section Widget
-  Widget _buildProccedToPayment() {
+  Widget _buildProceedToPayment() {
     return CustomElevatedButton(
         text: "msg_procced_to_payment".tr.toUpperCase(),
         margin: EdgeInsets.only(left: 18.h, right: 14.h, bottom: 23.v),
         onPressed: () {
-          onTapProccedToPayment();
+          onTapProceedToPayment();
         });
   }
 
@@ -196,7 +196,7 @@ class Iphone14NineScreen extends GetWidget<Iphone14NineController> {
   }
 
   /// Navigates to the iphone14TenScreen when the action is triggered.
-  onTapProccedToPayment() {
+  onTapProceedToPayment() {
     Get.toNamed(
       AppRoutes.iphone14TenScreen,
     );

@@ -102,7 +102,7 @@ class Iphone14EightPage extends StatelessWidget {
                                                                               borderRadius: BorderRadius.circular(20.h))))
                                                                 ])))
                                                   ]))),
-                                      _buildNinetyTwo()
+                                      _buildMenuItems()
                                     ]))),
                         CustomImageView(
                             imagePath: ImageConstant.imgArrowLeftDeepOrangeA400,
@@ -174,7 +174,7 @@ class Iphone14EightPage extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildNinetyTwo() {
+  Widget _buildMenuItems() {
     return Align(
         alignment: Alignment.topCenter,
         child: Padding(

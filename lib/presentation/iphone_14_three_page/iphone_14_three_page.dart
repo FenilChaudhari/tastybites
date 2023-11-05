@@ -42,7 +42,7 @@ class Iphone14ThreePage extends StatelessWidget {
                                     SizedBox(height: 33.v),
                                     _buildPassword1(),
                                     SizedBox(height: 47.v),
-                                    _buildSighUp(),
+                                    _buildSignUp(),
                                     SizedBox(height: 28.v),
                                     Padding(
                                         padding: EdgeInsets.only(left: 118.h),
@@ -131,7 +131,7 @@ class Iphone14ThreePage extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildSighUp() {
+  Widget _buildSignUp() {
     return CustomElevatedButton(
         height: 45.v,
         text: "lbl_sigh_up".tr,
@@ -140,12 +140,12 @@ class Iphone14ThreePage extends StatelessWidget {
         decoration: CustomButtonStyles.gradientPrimaryToPurpleADecoration,
         buttonTextStyle: CustomTextStyles.titleLargeInterPrimaryContainer,
         onPressed: () {
-          onTapSighUp();
+          onTapSignUp();
         });
   }
 
   /// Navigates to the iphone14SixScreen when the action is triggered.
-  onTapSighUp() {
+  onTapSignUp() {
     Get.toNamed(
       AppRoutes.iphone14SixScreen,
     );

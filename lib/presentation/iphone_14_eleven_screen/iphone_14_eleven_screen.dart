@@ -25,7 +25,7 @@ class Iphone14ElevenScreen extends GetWidget<Iphone14ElevenController> {
                   Spacer(),
                   _buildSubtotal()
                 ])),
-            bottomNavigationBar: _buildCheckOut()));
+            bottomNavigationBar: _buildCheckOutButton()));
   }
 
   /// Section Widget
@@ -210,12 +210,12 @@ class Iphone14ElevenScreen extends GetWidget<Iphone14ElevenController> {
   }
 
   /// Section Widget
-  Widget _buildCheckOut() {
+  Widget _buildCheckOutButton() {
     return CustomElevatedButton(
         text: "lbl_check_out2".tr.toUpperCase(),
         margin: EdgeInsets.only(left: 12.h, right: 20.h, bottom: 37.v),
         onPressed: () {
-          onTapCheckOut();
+          onTapCheckOutButton();
         });
   }
 
@@ -225,7 +225,7 @@ class Iphone14ElevenScreen extends GetWidget<Iphone14ElevenController> {
   }
 
   /// Navigates to the iphone14SixScreen when the action is triggered.
-  onTapCheckOut() {
+  onTapCheckOutButton() {
     Get.toNamed(
       AppRoutes.iphone14SixScreen,
     );

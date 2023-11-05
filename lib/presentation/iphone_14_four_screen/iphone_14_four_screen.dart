@@ -35,17 +35,17 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        _buildSix(),
+                                        _buildRestaurantList(),
                                         SizedBox(height: 40.v),
-                                        _buildSeven(),
+                                        _buildRestaurantList1(),
                                         SizedBox(height: 40.v),
-                                        _buildEight(),
+                                        _buildRestaurantList2(),
                                         SizedBox(height: 40.v),
-                                        _buildThree(),
+                                        _buildRestaurantList3(),
                                         SizedBox(height: 40.v),
-                                        _buildFour(),
+                                        _buildRestaurantList4(),
                                         SizedBox(height: 40.v),
-                                        _buildFive()
+                                        _buildRestaurantList5()
                                       ]))),
                           Align(
                               alignment: Alignment.topLeft,
@@ -60,67 +60,67 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
                                         Padding(
                                             padding: EdgeInsets.only(left: 1.h),
                                             child: Row(children: [
-                                              _buildVeg(),
-                                              _buildNonVeg()
+                                              _buildVegCheckbox(),
+                                              _buildNonVegCheckbox()
                                             ])),
                                         SizedBox(height: 12.v),
                                         Padding(
                                             padding: EdgeInsets.only(left: 1.h),
                                             child: Row(children: [
-                                              _buildJain(),
-                                              _buildVegan()
+                                              _buildJainCheckbox(),
+                                              _buildVeganCheckbox()
                                             ])),
                                         SizedBox(height: 16.v),
                                         Divider(endIndent: 4.h),
                                         SizedBox(height: 17.v),
                                         Row(children: [
-                                          _buildBreakFast(),
-                                          _buildLunch()
+                                          _buildBreakfastCheckbox(),
+                                          _buildLunchCheckbox()
                                         ]),
                                         SizedBox(height: 17.v),
                                         Padding(
                                             padding: EdgeInsets.only(left: 1.h),
                                             child: Row(children: [
-                                              _buildBrunch(),
-                                              _buildDinner()
+                                              _buildBrunchCheckbox(),
+                                              _buildDinnerCheckbox()
                                             ])),
                                         SizedBox(height: 18.v),
                                         Divider(indent: 2.h),
                                         SizedBox(height: 31.v),
-                                        _buildKm(),
+                                        _buildKmCheckbox1(),
                                         SizedBox(height: 17.v),
-                                        _buildKm1(),
+                                        _buildKmCheckbox3(),
                                         SizedBox(height: 15.v),
-                                        _buildKm2(),
+                                        _buildKmCheckbox5(),
                                         SizedBox(height: 18.v),
                                         Divider(indent: 4.h),
                                         SizedBox(height: 31.v),
                                         Padding(
                                             padding: EdgeInsets.only(left: 4.h),
                                             child: Row(children: [
-                                              _buildPerson(),
-                                              _buildPersons()
+                                              _buildPersonCheckbox(),
+                                              _buildPersonsCheckbox()
                                             ])),
                                         SizedBox(height: 18.v),
-                                        _buildPersons1(),
+                                        _buildPersonsCheckbox1(),
                                         SizedBox(height: 12.v),
-                                        _buildOrmorePersons(),
+                                        _buildOrMorePersonsCheckbox(),
                                         SizedBox(height: 33.v),
                                         Divider(indent: 4.h),
                                         SizedBox(height: 30.v),
-                                        _buildStars(),
+                                        _buildStarsCheckbox(),
                                         SizedBox(height: 13.v),
-                                        _buildStars1(),
+                                        _buildStarsCheckbox1(),
                                         SizedBox(height: 13.v),
-                                        _buildStarorLess(),
+                                        _buildStarOrLessCheckbox(),
                                         SizedBox(height: 16.v),
                                         Divider(indent: 4.h),
                                         SizedBox(height: 18.v),
-                                        _buildTakeaway(),
+                                        _buildTakeawayCheckbox(),
                                         SizedBox(height: 13.v),
-                                        _buildDriveThrough(),
+                                        _buildDriveThroughCheckbox(),
                                         SizedBox(height: 11.v),
-                                        _buildDineIn()
+                                        _buildDineInCheckbox()
                                       ])))
                         ]))))));
   }
@@ -140,10 +140,10 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Section Widget
-  Widget _buildSix() {
+  Widget _buildRestaurantList() {
     return GestureDetector(
         onTap: () {
-          onTapSix();
+          onTapRestaurantList();
         },
         child: Padding(
             padding: EdgeInsets.only(right: 15.h),
@@ -185,10 +185,10 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Section Widget
-  Widget _buildSeven() {
+  Widget _buildRestaurantList1() {
     return GestureDetector(
         onTap: () {
-          onTapSeven();
+          onTapRestaurantList1();
         },
         child: Padding(
             padding: EdgeInsets.only(right: 11.h),
@@ -230,10 +230,10 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Section Widget
-  Widget _buildEight() {
+  Widget _buildRestaurantList2() {
     return GestureDetector(
         onTap: () {
-          onTapEight();
+          onTapRestaurantList2();
         },
         child: Padding(
             padding: EdgeInsets.only(right: 11.h),
@@ -275,10 +275,10 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Section Widget
-  Widget _buildThree() {
+  Widget _buildRestaurantList3() {
     return GestureDetector(
         onTap: () {
-          onTapThree();
+          onTapRestaurantList3();
         },
         child: Padding(
             padding: EdgeInsets.only(right: 15.h),
@@ -320,10 +320,10 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Section Widget
-  Widget _buildFour() {
+  Widget _buildRestaurantList4() {
     return GestureDetector(
         onTap: () {
-          onTapFour();
+          onTapRestaurantList4();
         },
         child: Padding(
             padding: EdgeInsets.only(right: 11.h),
@@ -364,10 +364,10 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Section Widget
-  Widget _buildFive() {
+  Widget _buildRestaurantList5() {
     return GestureDetector(
         onTap: () {
-          onTapFive();
+          onTapRestaurantList5();
         },
         child: Padding(
             padding: EdgeInsets.only(right: 11.h),
@@ -408,248 +408,248 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Section Widget
-  Widget _buildVeg() {
+  Widget _buildVegCheckbox() {
     return Padding(
         padding: EdgeInsets.only(bottom: 1.v),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_veg".tr,
-            value: controller.veg.value,
+            value: controller.vegCheckbox.value,
             onChange: (value) {
-              controller.veg.value = value;
+              controller.vegCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildNonVeg() {
+  Widget _buildNonVegCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 19.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_non_veg".tr,
-            value: controller.nonVeg.value,
+            value: controller.nonVegCheckbox.value,
             onChange: (value) {
-              controller.nonVeg.value = value;
+              controller.nonVegCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildJain() {
+  Widget _buildJainCheckbox() {
     return Padding(
         padding: EdgeInsets.only(bottom: 2.v),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_jain".tr,
-            value: controller.jain.value,
+            value: controller.jainCheckbox.value,
             onChange: (value) {
-              controller.jain.value = value;
+              controller.jainCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildVegan() {
+  Widget _buildVeganCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 17.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_vegan".tr,
-            value: controller.vegan.value,
+            value: controller.veganCheckbox.value,
             onChange: (value) {
-              controller.vegan.value = value;
+              controller.veganCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildBreakFast() {
+  Widget _buildBreakfastCheckbox() {
     return Obx(() => CustomCheckboxButton(
         text: "lbl_breakfast".tr,
-        value: controller.breakFast.value,
+        value: controller.breakfastCheckbox.value,
         onChange: (value) {
-          controller.breakFast.value = value;
+          controller.breakfastCheckbox.value = value;
         }));
   }
 
   /// Section Widget
-  Widget _buildLunch() {
+  Widget _buildLunchCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 12.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_lunch".tr,
-            value: controller.lunch.value,
+            value: controller.lunchCheckbox.value,
             onChange: (value) {
-              controller.lunch.value = value;
+              controller.lunchCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildBrunch() {
+  Widget _buildBrunchCheckbox() {
     return Obx(() => CustomCheckboxButton(
         text: "lbl_brunch".tr,
-        value: controller.brunch.value,
+        value: controller.brunchCheckbox.value,
         onChange: (value) {
-          controller.brunch.value = value;
+          controller.brunchCheckbox.value = value;
         }));
   }
 
   /// Section Widget
-  Widget _buildDinner() {
+  Widget _buildDinnerCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 34.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_dinner".tr,
-            value: controller.dinner.value,
+            value: controller.dinnerCheckbox.value,
             onChange: (value) {
-              controller.dinner.value = value;
+              controller.dinnerCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildKm() {
+  Widget _buildKmCheckbox1() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_0_1_km".tr,
-            value: controller.km.value,
+            value: controller.kmCheckbox.value,
             onChange: (value) {
-              controller.km.value = value;
+              controller.kmCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildKm1() {
+  Widget _buildKmCheckbox3() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_1_3_km".tr,
-            value: controller.km1.value,
+            value: controller.kmCheckbox2.value,
             onChange: (value) {
-              controller.km1.value = value;
+              controller.kmCheckbox2.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildKm2() {
+  Widget _buildKmCheckbox5() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_4_8_km".tr,
-            value: controller.km2.value,
+            value: controller.kmCheckbox4.value,
             onChange: (value) {
-              controller.km2.value = value;
+              controller.kmCheckbox4.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildPerson() {
+  Widget _buildPersonCheckbox() {
     return Obx(() => CustomCheckboxButton(
         text: "lbl_1_person".tr,
-        value: controller.person.value,
+        value: controller.personCheckbox.value,
         onChange: (value) {
-          controller.person.value = value;
+          controller.personCheckbox.value = value;
         }));
   }
 
   /// Section Widget
-  Widget _buildPersons() {
+  Widget _buildPersonsCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 31.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_2_4_persons".tr,
-            value: controller.persons.value,
+            value: controller.personsCheckbox.value,
             onChange: (value) {
-              controller.persons.value = value;
+              controller.personsCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildPersons1() {
+  Widget _buildPersonsCheckbox1() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_5_8_persons".tr,
-            value: controller.persons1.value,
+            value: controller.personsCheckbox1.value,
             onChange: (value) {
-              controller.persons1.value = value;
+              controller.personsCheckbox1.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildOrmorePersons() {
+  Widget _buildOrMorePersonsCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "msg_9_or_more_persons".tr,
-            value: controller.ormorePersons.value,
+            value: controller.orMorePersonsCheckbox.value,
             onChange: (value) {
-              controller.ormorePersons.value = value;
+              controller.orMorePersonsCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildStars() {
+  Widget _buildStarsCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_5_stars".tr,
-            value: controller.stars.value,
+            value: controller.starsCheckbox.value,
             onChange: (value) {
-              controller.stars.value = value;
+              controller.starsCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildStars1() {
+  Widget _buildStarsCheckbox1() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_4_stars".tr,
-            value: controller.stars1.value,
+            value: controller.starsCheckbox1.value,
             onChange: (value) {
-              controller.stars1.value = value;
+              controller.starsCheckbox1.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildStarorLess() {
+  Widget _buildStarOrLessCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 4.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_3_star_or_less".tr,
-            value: controller.starorLess.value,
+            value: controller.starOrLessCheckbox.value,
             onChange: (value) {
-              controller.starorLess.value = value;
+              controller.starOrLessCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildTakeaway() {
+  Widget _buildTakeawayCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 8.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_takeaway".tr,
-            value: controller.takeaway.value,
+            value: controller.takeawayCheckbox.value,
             onChange: (value) {
-              controller.takeaway.value = value;
+              controller.takeawayCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildDriveThrough() {
+  Widget _buildDriveThroughCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 8.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_drive_through".tr,
-            value: controller.driveThrough.value,
+            value: controller.driveThroughCheckbox.value,
             onChange: (value) {
-              controller.driveThrough.value = value;
+              controller.driveThroughCheckbox.value = value;
             })));
   }
 
   /// Section Widget
-  Widget _buildDineIn() {
+  Widget _buildDineInCheckbox() {
     return Padding(
         padding: EdgeInsets.only(left: 9.h),
         child: Obx(() => CustomCheckboxButton(
             text: "lbl_dine_in".tr,
-            value: controller.dineIn.value,
+            value: controller.dineInCheckbox.value,
             onChange: (value) {
-              controller.dineIn.value = value;
+              controller.dineInCheckbox.value = value;
             })));
   }
 
@@ -659,7 +659,7 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Displays a dialog with the [Iphone14FiveDialog] content.
-  onTapSix() {
+  onTapRestaurantList() {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.transparent,
       contentPadding: EdgeInsets.zero,
@@ -673,7 +673,7 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Displays a dialog with the [Iphone14FiveDialog] content.
-  onTapSeven() {
+  onTapRestaurantList1() {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.transparent,
       contentPadding: EdgeInsets.zero,
@@ -687,7 +687,7 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Displays a dialog with the [Iphone14FiveDialog] content.
-  onTapEight() {
+  onTapRestaurantList2() {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.transparent,
       contentPadding: EdgeInsets.zero,
@@ -701,7 +701,7 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Displays a dialog with the [Iphone14FiveDialog] content.
-  onTapThree() {
+  onTapRestaurantList3() {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.transparent,
       contentPadding: EdgeInsets.zero,
@@ -715,7 +715,7 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Displays a dialog with the [Iphone14FiveDialog] content.
-  onTapFour() {
+  onTapRestaurantList4() {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.transparent,
       contentPadding: EdgeInsets.zero,
@@ -729,7 +729,7 @@ class Iphone14FourScreen extends GetWidget<Iphone14FourController> {
   }
 
   /// Displays a dialog with the [Iphone14FiveDialog] content.
-  onTapFive() {
+  onTapRestaurantList5() {
     Get.dialog(AlertDialog(
       backgroundColor: Colors.transparent,
       contentPadding: EdgeInsets.zero,

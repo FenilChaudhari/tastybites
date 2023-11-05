@@ -8,45 +8,45 @@ import 'package:tastybites/presentation/iphone_14_four_screen/models/iphone_14_f
 class Iphone14FourController extends GetxController {
   Rx<Iphone14FourModel> iphone14FourModelObj = Iphone14FourModel().obs;
 
-  Rx<bool> veg = false.obs;
+  Rx<bool> vegCheckbox = false.obs;
 
-  Rx<bool> nonVeg = false.obs;
+  Rx<bool> nonVegCheckbox = false.obs;
 
-  Rx<bool> jain = false.obs;
+  Rx<bool> jainCheckbox = false.obs;
 
-  Rx<bool> vegan = false.obs;
+  Rx<bool> veganCheckbox = false.obs;
 
-  Rx<bool> breakFast = false.obs;
+  Rx<bool> breakfastCheckbox = false.obs;
 
-  Rx<bool> lunch = false.obs;
+  Rx<bool> lunchCheckbox = false.obs;
 
-  Rx<bool> brunch = false.obs;
+  Rx<bool> brunchCheckbox = false.obs;
 
-  Rx<bool> dinner = false.obs;
+  Rx<bool> dinnerCheckbox = false.obs;
 
-  Rx<bool> km = false.obs;
+  Rx<bool> kmCheckbox = false.obs;
 
-  Rx<bool> km1 = false.obs;
+  Rx<bool> kmCheckbox2 = false.obs;
 
-  Rx<bool> km2 = false.obs;
+  Rx<bool> kmCheckbox4 = false.obs;
 
-  Rx<bool> person = false.obs;
+  Rx<bool> personCheckbox = false.obs;
 
-  Rx<bool> persons = false.obs;
+  Rx<bool> personsCheckbox = false.obs;
 
-  Rx<bool> persons1 = false.obs;
+  Rx<bool> personsCheckbox1 = false.obs;
 
-  Rx<bool> ormorePersons = false.obs;
+  Rx<bool> orMorePersonsCheckbox = false.obs;
 
-  Rx<bool> stars = false.obs;
+  Rx<bool> starsCheckbox = false.obs;
 
-  Rx<bool> stars1 = false.obs;
+  Rx<bool> starsCheckbox1 = false.obs;
 
-  Rx<bool> starorLess = false.obs;
+  Rx<bool> starOrLessCheckbox = false.obs;
 
-  Rx<bool> takeaway = false.obs;
+  Rx<bool> takeawayCheckbox = false.obs;
 
-  Rx<bool> driveThrough = false.obs;
+  Rx<bool> driveThroughCheckbox = false.obs;
 
-  Rx<bool> dineIn = false.obs;
+  Rx<bool> dineInCheckbox = false.obs;
 }

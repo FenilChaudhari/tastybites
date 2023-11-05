@@ -1,19 +1,19 @@
 import '../controller/iphone_14_nine_controller.dart';
-import '../models/menuitem1_item_model.dart';
+import '../models/menuitems_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:tastybites/core/app_export.dart';
 import 'package:tastybites/widgets/custom_icon_button.dart';
 
 // ignore: must_be_immutable
-class Menuitem1ItemWidget extends StatelessWidget {
-  Menuitem1ItemWidget(
-    this.menuitem1ItemModelObj, {
+class MenuitemsItemWidget extends StatelessWidget {
+  MenuitemsItemWidget(
+    this.menuitemsItemModelObj, {
     Key? key,
   }) : super(
           key: key,
         );
 
-  Menuitem1ItemModel menuitem1ItemModelObj;
+  MenuitemsItemModel menuitemsItemModelObj;
 
   var controller = Get.find<Iphone14NineController>();
 
@@ -46,14 +46,14 @@ class Menuitem1ItemWidget extends StatelessWidget {
               children: [
                 Obx(
                   () => Text(
-                    menuitem1ItemModelObj.itemName!.value,
+                    menuitemsItemModelObj.itemName!.value,
                     style: CustomTextStyles.titleMediumOnSecondaryContainerBold,
                   ),
                 ),
                 SizedBox(height: 5.v),
                 Obx(
                   () => Text(
-                    menuitem1ItemModelObj.itemPrice!.value,
+                    menuitemsItemModelObj.itemPrice!.value,
                     style: CustomTextStyles.titleMediumOnPrimary,
                   ),
                 ),
@@ -75,7 +75,7 @@ class Menuitem1ItemWidget extends StatelessWidget {
                   padding: EdgeInsets.only(left: 3.h),
                   child: Obx(
                     () => Text(
-                      menuitem1ItemModelObj.menuNumber!.value,
+                      menuitemsItemModelObj.menuNumber!.value,
                       style: theme.textTheme.titleSmall,
                     ),
                   ),
