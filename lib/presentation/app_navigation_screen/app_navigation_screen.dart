@@ -30,67 +30,67 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                     child: Column(
                       children: [
                         _buildScreenTitle(
-                          userName: "iPhone 14 Pro Max - One".tr,
+                          productName: "iPhone 14 Pro Max - One".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.iphone14ProMaxOneScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 Pro Max - Five".tr,
+                          productName: "iPhone 14 Pro Max - Five".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.iphone14ProMaxFiveScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 Pro Max - Two".tr,
+                          productName: "iPhone 14 Pro Max - Two".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.iphone14ProMaxTwoScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 Pro Max - Three".tr,
+                          productName: "iPhone 14 Pro Max - Three".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.iphone14ProMaxThreeScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 Pro Max - Four".tr,
+                          productName: "iPhone 14 Pro Max - Four".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.iphone14ProMaxFourScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Three - Tab Container".tr,
+                          productName: "iPhone 14 - Three - Tab Container".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.iphone14ThreeTabContainerScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Six".tr,
+                          productName: "iPhone 14 - Six".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.iphone14SixScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Seven".tr,
+                          productName: "iPhone 14 - Seven".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.iphone14SevenScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Four".tr,
+                          productName: "iPhone 14 - Four".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.iphone14FourScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Eight - Container".tr,
+                          productName: "iPhone 14 - Eight - Container".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.iphone14EightContainerScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Nine".tr,
+                          productName: "iPhone 14 - Nine".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.iphone14NineScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Ten".tr,
+                          productName: "iPhone 14 - Ten".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.iphone14TenScreen),
                         ),
                         _buildScreenTitle(
-                          userName: "iPhone 14 - Eleven".tr,
+                          productName: "iPhone 14 - Eleven".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.iphone14ElevenScreen),
                         ),
@@ -162,7 +162,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
 
   /// Common widget
   Widget _buildScreenTitle({
-    required String userName,
+    required String productName,
     Function? onTapScreenTitle,
   }) {
     return GestureDetector(
@@ -181,7 +181,7 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.h),
                 child: Text(
-                  userName,
+                  productName,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0XFF000000),
